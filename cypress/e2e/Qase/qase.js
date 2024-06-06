@@ -5,8 +5,8 @@ import { use } from "chai";
 
 const loginPageQase = new LoginPageQase();
 const homePage = new HomePageQase();
-const username = "nikolicnemanja261@gmail.com";
-const password = "Batalimevise3!"
+const username = "ristovic.matea421@gmail.com";
+const password = "MatkoBatko1!"
 
 Given("User is on Quase Login page", () => {
     cy.visit("https://app.qase.io/login");
@@ -51,7 +51,7 @@ Given("User is logged in on Quase application", () => {
         homePage.projectOptionsDropdown().click();
         homePage.deleteOptionInDropdown().click();
         homePage.deleteModal().should('be.visible')
-        homePage.deleteModal().contains('Terminacija')
+        homePage.deleteModal().contains('T-Rex')
         homePage.confirmProjectDeleteButton().click();
       })
       
